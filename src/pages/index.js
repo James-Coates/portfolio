@@ -2,19 +2,27 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+import landingStyling from '../components/landing.module.scss';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className={`${landingStyling.landing} container`}>
+        <div className={landingStyling.container}>
+          <div className={landingStyling.display}>
+            I <span>Build</span> Things
+          </div>
+          <div className={landingStyling.lead}>
+            I’m James, a full stack web developer turning ideas into digital reality.
+          </div>
+          <div className={landingStyling.btn__container}>
+            <Link className="btn" to="/work">Latest Work</Link>
+            <Link className="btn btn__secondary" to="/contact">Lets Chat</Link>
+          </div>
+        </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
