@@ -22,3 +22,43 @@
     margin: 0 2rem;
   }
 }
+
+.container {
+  min-width: 300px;
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.col2 {
+  width: 48%;
+  padding-bottom: 2rem;
+  justify-content: center;
+  display: flex;
+}
+
+.projImg {
+  box-shadow: 0 0 10px rgba(black, 0.05);
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: $view-sm){
+  .banner__container {
+    width: 100%;
+  }
+  .projImg {
+    box-shadow: 0 0 10px rgba(black, 0.1);
+    height: auto;
+    width: 100%;
+  }
+  .col2 {
+    width: 90%;
+  }
+}

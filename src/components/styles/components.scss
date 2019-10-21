@@ -66,3 +66,15 @@ textarea {
 form .btn {
   align-self: flex-end;
 }
+
+.alert {
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+  color: $color-white;
+}
+
+.success {
+  background: #33D275;
+} 
