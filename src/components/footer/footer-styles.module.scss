@@ -1,0 +1,19 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  min-height: 300rem;
+  background-color: $color-gray-light;
+  padding-top: 100rem;
+}
+
+.container {
+  @include container;
+
+}
+
+.header {
+  @include heading;
+  color: $color-primary;
+  max-width: 300rem;
+}

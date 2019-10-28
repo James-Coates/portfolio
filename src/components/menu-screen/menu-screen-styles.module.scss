@@ -1,0 +1,84 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-primary;
+  position: fixed;
+  z-index: 50;
+  transform: translateY(-100%);
+  transition: 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  padding: 40rem 30rem;
+  @media screen and (min-width: $screen-md) {
+    align-items: flex-end;
+  }
+}
+
+.menuActive {
+  transform: translateY(0%);
+}
+
+.col1 {
+  flex: 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: $screen-md) {
+    width: 40%;
+  }
+}
+
+.col2 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuItem {
+  @include heading;
+  color: rgba($color-white, 0);
+  cursor: pointer;
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.itemActive {
+  color: rgba($color-white, 1);
+}
+
+.social {
+  font-size: 35rem;
+  color: darken($color-primary, $amount: 5);
+  padding-bottom: 50rem;
+  & * {
+    cursor: pointer;
+    margin-right: 25rem;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+.name {
+  @include heading;
+  color: darken($color-primary, $amount: 5);
+  line-height: 50rem;
+  max-width: 300rem;
+  cursor: default;
+  @media screen and (min-width: $screen-md) {
+    padding-left: 150rem;
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import featuredProjectStyles from './feature-project-styles.module.scss';
 
