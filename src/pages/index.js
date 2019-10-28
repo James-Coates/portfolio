@@ -1,29 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
+import Helmet from "react-helmet"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Landing from "../components/landing"
+import FeaturedWork from "../components/featured-work"
 
-import landingStyling from '../components/landing.module.scss';
+import '../styles/main.scss';
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" />
-    <div className={`${landingStyling.landing} container`}>
-        <div className={landingStyling.container}>
-          <div className={landingStyling.display}>
-            I <span>Build</span> Things
-          </div>
-          <div className={landingStyling.lead}>
-            I’m James, a full stack web developer turning ideas into digital reality.
-          </div>
-          <div className={landingStyling.btn__container}>
-            <Link className="btn" to="/work">Latest Work</Link>
-            <Link className="btn btn__secondary" to="/contact">Lets Chat</Link>
-          </div>
-        </div>
-    </div>
-  </Layout>
+    <Helmet>
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"/>
+    </Helmet>
+    <Landing />
+    <FeaturedWork />
+  </div>
 )
 
 export default IndexPage

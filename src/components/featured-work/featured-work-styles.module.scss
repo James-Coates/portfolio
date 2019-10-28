@@ -1,0 +1,27 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.section {
+  min-height: 100vh;
+  padding-top: 150rem;
+  background-color: $color-gray-light;
+}
+
+.container {
+  @include container;
+  display: flex;
+  justify-content: center;
+  & > div {
+    padding-bottom: 100rem;
+  }
+}
+
+.heading {
+  @include heading;
+  @include dash;
+  color: $color-primary;
+}
+
+.subHeading {
+  @include subHeading;
+}

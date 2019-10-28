@@ -1,0 +1,13 @@
+.col-sm-100 {
+  flex: 100%;
+}
+
+
+@media screen and (min-width: $screen-lg) {
+  .col-lg-50 {
+    flex: 0 50%;
+  }
+  .col-lg-60 {
+    flex: 0 60%;
+  }
+}

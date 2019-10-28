@@ -1,0 +1,59 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 90%, 100% 10%, 100% 100%, 0% 100%);
+    background: rgb(248,249,250);
+    background: linear-gradient(to top, rgba(248,249,250,1) 0%, rgba(248,249,250,0) 50%, rgba(248,249,250,1) 100%);
+  }
+}
+
+.display {
+  @include display;
+  color: $color-gray-medium;
+}
+
+.subDisplay {
+  @include subDisplay;
+  color: $color-primary;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 10rem 20rem 10rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $font-weight-thin;
+  animation: reflect 3s ease infinite;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 40rem;
+}
+
+@keyframes reflect {
+  0% {color: rgba($color-gray-medium, 0)}
+  30% {color: rgba($color-gray-medium, 1)}
+  70% {color: rgba($color-gray-medium, 1)}
+  100% {color: rgba($color-gray-medium, 0)}
+}

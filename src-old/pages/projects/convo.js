@@ -22,8 +22,7 @@ const convo = () => (
         A native mobile chat app running on iOS and Android. Built with React Native the application provides 
         an interface for users to send messages, images and their location. 
         </p>
-        <a href="https://james-coates.github.io/cf-pokedex/" target="blank" class="btn">Visit Site</a>
-        <a href="https://github.com/James-Coates/cf-pokedex" target="blank" class="btn">See on GitHub</a>
+        <a href="https://github.com/James-Coates/convo" target="blank" class="btn">See on GitHub</a>
       </div>
     </div>
     <div className="wrap">

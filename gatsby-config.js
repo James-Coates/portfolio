@@ -36,8 +36,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Limelight`,
-          `Roboto\:300,400,700,900`
+          `Poppins\:300,400,400i,900`
         ],
         display: 'swap'
       }

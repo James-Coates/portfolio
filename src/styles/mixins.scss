@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+// Typography
+
+@mixin display {
+  font-weight: $font-weight-bold;
+  font-size: 72rem;
+  text-transform: uppercase;
+  letter-spacing: 8rem;
+}
+
+@mixin subDisplay {
+  font-size: 18rem;
+  text-transform: uppercase;
+  letter-spacing: 4rem;
+}
+
+@mixin dash {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30rem;
+    height: 8rem;
+    background-color: $color-secondary;
+    top: -15rem;
+  }
+}
+
+@mixin heading {
+  font-size: 48rem;
+  font-weight: $font-weight-bold;
+  line-height: 58rem;
+  text-transform: uppercase;
+  position: relative;
+  max-width: 380rem;
+  padding-bottom: 30rem;
+}
+
+@mixin subHeading {
+  font-size: 22rem;
+  padding-bottom: 30rem;
+}
+
+
+
+// Containers / Wrappers
+
+@mixin container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  @media screen and (min-width: $screen-lg) {
+    max-width: 1180rem;
+  }
+}
