@@ -17,6 +17,10 @@ const FeaturedWork = ({ name, color }) => (
       </div>
       <div className="col-sm-100 col-lg-50">
         <div className={featuredProjectStyles.details}>
+          <div className={featuredProjectStyles.tags}>
+            <p>Web App</p>
+            <p>REACT</p>
+          </div>
           <h3 className={featuredProjectStyles.title}>
             CONVO
           </h3>

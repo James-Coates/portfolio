@@ -3,10 +3,12 @@
 .btn {
   margin-top: 50rem;
   padding: 20rem 50rem;
+  border-radius: 2rem;
 }
 
 .btn-primary-light {
-
+  background-color: $color-primary;
+  color: $color-white;
 }
 
 .btn-secondary-dark {
@@ -32,4 +34,68 @@
       transform: skewX(-25deg) translateX(0%);
     }
   }
+}
+
+form {
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-text {
+  display: block;
+  padding: 34rem 20rem 13rem 20rem;
+  margin-bottom: 20rem;
+  position: relative;
+  top: 0;
+  min-width: 330rem;
+  width: 100%;
+  border: 1px solid $color-gray-medium;
+  &::placeholder {
+    color: $color-gray-medium;
+    transition: 0.3s;
+  }
+}
+
+.message-container {
+  background-color: $color-white;
+  & > textarea {
+    z-index: 3;
+    padding-top: 40rem;
+  }
+}
+
+textarea {
+  height: 200rem;
+  resize: none;
+  background-color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  top: 25rem;
+  left: 22rem;
+  z-index: 2;
+  color: $color-gray-medium;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: 200rem;
+  height: 0;
+  display: block;
+  cursor: text;
+  .input-text:focus + & {
+    top: 12rem;
+    left: 22rem;
+    font-size: 14rem;
+    color: $color-gray-dark;
+  }
+}
+
+.input-filled {
+  top: 12rem;
+  left: 22rem;
+  font-size: 14rem;
+  color: $color-gray-dark;
 }

@@ -4,16 +4,69 @@
 .wrapper {
   min-height: 300rem;
   background-color: $color-gray-light;
-  padding-top: 100rem;
+  padding: 100rem 0 50rem 0;
 }
 
 .container {
   @include container;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.col1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  @media screen and (min-width: $screen-md) {
+    margin-right: 100rem;    
+  }
+}
+
+.col2 {
+  flex: 100%;
+  display: flex;
+  align-items: flex-end;
+  @media screen and (min-width: $screen-md) {
+    flex: 0 1 20%;   
+  }
+}
+
+.head {
+  padding-bottom: 50rem;
 }
 
 .header {
   @include heading;
   color: $color-primary;
   max-width: 300rem;
+  padding-bottom: 0;
+}
+
+.email {
+  font-style: italic;
+  font-size: 16rem;
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.social {
+  font-size: 35rem;
+  color: $color-gray-dark;
+  padding-top: 50rem;
+  text-align: center;
+  width: 100%;
+  min-width: 240rem;
+  @media screen and (min-width: $screen-md) {
+    text-align: right; 
+    padding-bottom: 70rem;
+  }
+  & * {
+    cursor: pointer;
+    margin-right: 25rem;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
 }

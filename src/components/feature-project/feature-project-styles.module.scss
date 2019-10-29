@@ -37,7 +37,16 @@
 
 .details {
   align-self: center;
-} 
+}
+
+.tags {
+  & > p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16rem;
+    margin-right: 20rem;
+  }
+}
 
 .title {
   @include heading;
