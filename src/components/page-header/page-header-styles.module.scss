@@ -1,0 +1,15 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  @include container;
+  padding-top: 200rem;
+  display: block;
+  padding-bottom: 100rem;
+}
+
+.heading {
+  @include heading;
+  @include dash;
+  color: $color-primary;
+}

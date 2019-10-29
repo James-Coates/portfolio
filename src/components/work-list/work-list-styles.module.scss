@@ -1,0 +1,12 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  @include container;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 800px) {
+    justify-content: space-between;
+  }
+  padding-bottom: 150rem;
+}

@@ -16,6 +16,7 @@
   position: relative;
   overflow: hidden;
   z-index: 0;
+  color: white;
   &::after {
     content: '';
     position: absolute;

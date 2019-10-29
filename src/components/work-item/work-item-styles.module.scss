@@ -1,0 +1,63 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  padding: 40rem 30rem;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+
+  flex: 0 100%;
+  max-width: 550rem;
+  background-color: darkblue; 
+  margin-bottom: 50rem;
+  border-radius: 20rem;
+  box-shadow: 0 0 10rem rgba(black, 0.8);
+  @media screen and (min-width: 800px) {
+    flex: 0 350rem;
+  }
+  @media screen and (min-width: 950px) {
+    flex: 0 400rem;
+  }
+  @media screen and (min-width: 1100px) {
+    flex: 0 450rem;
+  }
+  @media screen and (min-width: 1250px) {
+    flex: 0 550rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20rem rgba(black, 0.5);
+  }
+}
+
+.imageContainer {
+  height: 275rem;
+  background-color: darkcyan;
+  @media screen and (min-width: 950px) {
+    height: 375rem;
+  }
+}
+
+.tags {
+  padding-top: 50rem;
+  & > p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14rem;
+    margin-right: 15rem;
+    color: $color-gray-medium;
+  }
+}
+
+.title {
+  @include heading;
+  font-weight: 700;
+  font-size: 32rem;
+  padding-bottom: 10rem;
+}
+
+.btn {
+  margin-top: 0;
+}
