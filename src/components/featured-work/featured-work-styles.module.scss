@@ -3,14 +3,12 @@
 
 .section {
   min-height: 100vh;
-  padding-top: 150rem;
   background-color: $color-gray-light;
 }
 
 .container {
   @include container;
-  display: flex;
-  justify-content: center;
+  display: block;
   & > div {
     padding-bottom: 100rem;
   }

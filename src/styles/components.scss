@@ -124,7 +124,7 @@ textarea {
 
 .input-label {
   position: absolute;
-  top: 25rem;
+  top: 23rem;
   left: 22rem;
   z-index: 2;
   color: $color-gray-medium;
@@ -135,7 +135,7 @@ textarea {
   display: block;
   cursor: text;
   .input-text:focus + & {
-    top: 12rem;
+    top: 11rem;
     left: 22rem;
     font-size: 14rem;
     color: $color-gray-dark;
@@ -143,7 +143,7 @@ textarea {
 }
 
 .input-filled {
-  top: 12rem;
+  top: 11rem;
   left: 22rem;
   font-size: 14rem;
   color: $color-gray-dark;

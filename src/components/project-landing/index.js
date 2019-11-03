@@ -28,7 +28,7 @@ export default function ProjectLanding({ project }) {
       <div className={projectLandingStyles.body} dangerouslySetInnerHTML={{__html: descShort}} />
       <div>
         { link ? (
-          <a href={link} className="btn btn-primary-dark">Launch Application</a>
+          <a href={link} className="btn btn-primary-dark" target="blank">Launch Application</a>
         ) : ('') }
         <a href={repo} className="btn btn-secondary-dark">View Repo</a>
       </div>

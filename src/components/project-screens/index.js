@@ -48,7 +48,7 @@ export default function ProjectScreens ({ project }) {
       <div className={projectScreensStyles.container} style={{paddingTop: 150}}>
         <h1 className={projectScreensStyles.heading}>Check it out</h1>
         { link ? (
-          <a href={link} className="btn btn-primary-light">Launch Application</a>
+          <a href={link} className="btn btn-primary-light" target="blank">Launch Application</a>
         ) : ('') }
         <a className="btn btn-secondary-light" href={repo} target="blank">View Github Repo</a>
       </div>

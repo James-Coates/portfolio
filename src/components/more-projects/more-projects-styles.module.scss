@@ -1,0 +1,39 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.section {
+  background-color: $color-gray-medium;
+  padding: 100rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  @include heading;
+  font-size: 40rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 330rem;
+  transition: 0.3s;
+  padding-bottom: 0;
+  
+  & > div {
+    width: 70rem;
+    height: 100rem;
+    background-color: $color-gray-dark;
+    position: absolute;
+    top: 0;
+    right: 30rem;
+    clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0 100%, 60% 50%);
+    transition: 0.3s;
+
+  }
+  &:hover {
+    color: $color-primary;
+    & > div {
+      background-color: $color-primary;
+
+    }
+  }
+}

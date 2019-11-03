@@ -1,0 +1,37 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.section {
+  min-height: 50vh;
+  background-color: $color-gray-light;
+  padding: 150rem 0;
+}
+
+.container {
+  @include container;
+  display: block;
+  height: 100%;
+  & > h3 {
+    @include heading;
+    padding-bottom: 0;
+    color: $color-primary;
+    font-size: 32rem;
+    padding-top: 50rem;
+  }
+  & > p:not(:last-child) {
+    padding-bottom: 1em;
+  }
+}
+
+.image {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 200rem;
+}
+
+@media screen and (min-width: $screen-md) {
+  .container {
+    max-width: 600rem;
+  }
+}

@@ -7,7 +7,7 @@ const Landing = () => (
   <section className={landingStyles.section}>
     <h2 className={landingStyles.display}>James</h2>
     <p className={landingStyles.subDisplay}>DEVELOPER & ENGINEER</p>
-    <Link to="#featured-work">
+    <Link to="#about">
       <div className={landingStyles.scroll}>
         <p>Scroll</p>
         <i className={`icon ion-ios-arrow-round-down ${landingStyles.icon}`}></i>
