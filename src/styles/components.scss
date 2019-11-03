@@ -4,19 +4,13 @@
   margin-top: 50rem;
   padding: 20rem 50rem;
   border-radius: 2rem;
-}
-
-.btn-primary-light {
-  background-color: $color-primary;
-  color: $color-white;
-}
-
-.btn-secondary-dark {
-  border: 2px solid $color-white;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  color: white;
+  display: inline-block;
+  &:not(:last-of-type) {
+    margin-right: 50rem;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -24,10 +18,64 @@
     right: -25%;
     width: 150%;
     height: 100%;
-    background-color: white;
     transform: skewX(-25deg) translateX(100%);
     transition: 0.5s;
     z-index: -1;
+  }
+  &:hover {
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-primary-light {
+  border: 2px solid $color-white;
+  background-color: $color-primary;
+  color: $color-white;
+  &::after {
+    background-color: lighten($color-primary, 5%);
+  }
+  &:hover {
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-secondary-light {
+  color: $color-primary;
+  border: 2px solid $color-gray-medium;
+  &::after {
+    background-color: $color-gray-medium;
+  }
+  &:hover {
+    color: $color-primary;
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-primary-dark {
+  border: 2px solid $color-white;
+  color: white;
+  &::after {
+    background-color: white;
+  }
+  &:hover {
+    color: $color-primary;
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-secondary-dark {
+  border: 2px solid $color-white;
+  color: $color-white;
+  &::after {
+    background-color: $color-white;
   }
   &:hover {
     color: $color-primary;

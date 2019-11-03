@@ -1,0 +1,42 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  @include container;
+  padding-top: 150rem;
+  display: block;
+  padding-bottom: 150rem;
+  text-align: center;
+}
+
+.heading {
+  @include heading;
+  font-size: 28rem;
+  color: $color-primary;
+  margin: 0 auto;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 25rem;
+    left: 50%;
+    height: 4rem;
+    width: 50rem;
+    background-color: $color-primary;
+    transform: translateX(-50%);
+  }
+}
+
+.body {
+  text-align: left;
+  padding: 10rem 0;
+  & > p:not(:last-child) {
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .container {
+    max-width: 600rem;
+    margin: 0 auto;
+  }
+}

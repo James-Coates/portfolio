@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.btn {
+  display: none;
+}
+
+@media screen and (min-width: $screen-md) {
+  .btn {
+    display: block;
+    position: fixed;
+    bottom: 30rem;
+    right: 30rem;
+    padding: 15rem 30rem;
+    background-color: rgba($color-primary, 0.5);
+    color: white;
+    border-radius: 50rem;
+    text-align: center;
+    transition: 0.5s ease;
+    box-shadow: 0 0 15rem rgba(black, 0.25);
+    font-size: 14rem;
+    &:hover {
+      background-color: rgba($color-primary, 1);
+      transform: scale(1.02);
+      box-shadow: 0 0 25rem rgba(black, 0.15);
+    }
+  }
+}

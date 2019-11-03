@@ -6,11 +6,13 @@ import FeaturedWork from "../components/featured-work"
 
 import '../styles/main.scss';
 
-const IndexPage = () => (
-  <Layout>
-    <Landing />
-    <FeaturedWork />
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <Landing />
+      <FeaturedWork />
+    </Layout>
+  )
+}
 
 export default IndexPage

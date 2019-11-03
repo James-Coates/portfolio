@@ -1,39 +1,64 @@
 import React from "react";
+import { Link } from 'gatsby';
+import Image from 'gatsby-image';
 
 import featuredProjectStyles from './feature-project-styles.module.scss';
 
-const FeaturedWork = ({ name, color }) => (
-  <div 
-    className={featuredProjectStyles.wrapper} 
-    style={{backgroundColor: color}}
-    id="featured-work"
-  >
-    <div className={featuredProjectStyles.container}>
-      <div className="col-sm-100 col-lg-50">
-        <img 
-          className={featuredProjectStyles.image}
-          src={require('../../images/mockup.png')}
-        />
-      </div>
-      <div className="col-sm-100 col-lg-50">
+const FeatureProject = ({ project }) => {
+  const { id, title, slug, tags, descShort, colorDark, image } = project;
+  return (
+    <div 
+      className={featuredProjectStyles.wrapper} 
+      style={{backgroundColor: colorDark}}
+    >
+      <div className={featuredProjectStyles.container}>
         <div className={featuredProjectStyles.details}>
           <div className={featuredProjectStyles.tags}>
-            <p>Web App</p>
-            <p>REACT</p>
-          </div>
-          <h3 className={featuredProjectStyles.title}>
-            CONVO
-          </h3>
-          <p className={featuredProjectStyles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis 
-          dis parturient.
-          </p>
-          <button className="btn btn-secondary-dark">Find out more</button>
+                {tags.map((tag) => (
+                  <p key={tag}>{tag}</p>
+                ))}
+              </div>
+              <h3 className={featuredProjectStyles.title}>
+                {title}
+              </h3>
+              <div className={featuredProjectStyles.description} dangerouslySetInnerHTML={{__html: descShort}} />
+            <Link className="btn btn-primary-dark" to={`/projects/${slug}`}>Find out more</Link>
+        </div>
+        <div className={featuredProjectStyles.imageContainer}>
+          <img 
+            className={featuredProjectStyles.image}
+            src={require(`../../data/${image.relativePath}`)}
+            alt='test'
+          />
         </div>
       </div>
     </div>
-  </div>
-)
+  );
+}
 
-export default FeaturedWork
+export default FeatureProject;
+
+{/* <div className={featuredProjectStyles.container}>
+        <div className="col-sm-100 col-lg-50">
+          <img 
+            className={featuredProjectStyles.image}
+            src={require(`../../data/${image.relativePath}`)}
+            alt='test'
+          />
+        </div>
+        <div className="col-sm-100 col-lg-50">
+          <div className={featuredProjectStyles.details}>
+            <div className={featuredProjectStyles.tags}>
+              {tags.map((tag) => (
+                <p key={tag}>{tag}</p>
+              ))}
+            </div>
+            <h3 className={featuredProjectStyles.title}>
+              {title}
+            </h3>
+            <p className={featuredProjectStyles.description}>
+            { descShort }
+            </p>
+            <Link className="btn btn-secondary-dark" to={`/projects/${slug}`}>Find out more</Link>
+          </div>
+        </div> */}

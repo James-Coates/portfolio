@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub, faMediumM } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,15 +18,21 @@ const Footer = () => (
               </p>
             </a>
         </div>
-        <div className={FooterStyles.formContainer}>
+        <div className={FooterStyles.formContainer} id="contact">
           <FooterForm />
         </div>
       </div>
       <div className={FooterStyles.col2}>
         <div className={FooterStyles.social}>
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faMediumM} />
+          <a href="https://twitter.com/_JamesCoates">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="https://github.com/James-Coates">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://medium.com/@jamescoates192">
+            <FontAwesomeIcon icon={faMediumM} />
+          </a>
         </div>
       </div>
     </div>

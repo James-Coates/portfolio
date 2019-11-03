@@ -2,10 +2,10 @@
 @import '../../styles/variables.scss';
 
 .container {
-  padding: 40rem 30rem;
   color: white;
   transition: 0.5s;
   cursor: pointer;
+  overflow: hidden;
 
   flex: 0 100%;
   max-width: 550rem;
@@ -32,11 +32,14 @@
   }
 }
 
+.link {
+  padding: 40rem 30rem;
+  display: block;
+}
+
 .imageContainer {
-  height: 275rem;
-  background-color: darkcyan;
+  overflow: visible;
   @media screen and (min-width: 950px) {
-    height: 375rem;
   }
 }
 
@@ -55,7 +58,8 @@
   @include heading;
   font-weight: 700;
   font-size: 32rem;
-  padding-bottom: 10rem;
+  padding-bottom: 20rem;
+  line-height: 32rem;
 }
 
 .btn {

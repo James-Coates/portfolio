@@ -11,13 +11,13 @@ const MenuScreen = ({ menuActive, setMenuActive }) => {
   <div className={`${MenuScreenStyles.wrapper} ${menuActive ? MenuScreenStyles.menuActive : null}`}>
     <div className={MenuScreenStyles.col1}>
       <div className={MenuScreenStyles.nav}>
-        <Link to="#" onClick={() => setMenuActive()}>
+        <Link to="/projects" onClick={() => setMenuActive()}>
           <p className={`${MenuScreenStyles.menuItem} ${menuActive ? MenuScreenStyles.itemActive : null}`}>About</p>
         </Link>
-        <Link to="/work" onClick={() => setMenuActive()}>
+        <Link to="/projects" onClick={() => setMenuActive()}>
           <p className={`${MenuScreenStyles.menuItem} ${menuActive ? MenuScreenStyles.itemActive : null}`}>Work</p>
         </Link>
-        <Link to="#">
+        <Link to="/#contact">
           <p className={`${MenuScreenStyles.menuItem} ${menuActive ? MenuScreenStyles.itemActive : null}`}>Contact</p>
         </Link>
       </div>
