@@ -9,7 +9,7 @@
   z-index: 0;
   display: inline-block;
   &:not(:last-of-type) {
-    margin-right: 50rem;
+    margin-right: 0rem;
   }
   &::after {
     content: '';
@@ -147,4 +147,10 @@ textarea {
   left: 22rem;
   font-size: 14rem;
   color: $color-gray-dark;
+}
+
+@media screen and (min-width: $screen-md) {
+  .btn:not(:last-of-type) {
+    margin-right: 50rem;
+  }
 }
