@@ -1,0 +1,80 @@
+@import '../../styles2/mixins.scss';
+@import '../../styles2/variables.scss';
+
+.container {
+  @include container;
+  height: 55rem;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 100;
+  color: white;
+  @media screen and (min-width: $screen-md) {
+    padding: 0 0rem;    
+  }
+}
+
+.logo {
+  font-size: 16rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-size: 16rem;
+  color: #727272;
+  & a {
+    margin-left: 90rem;
+    transition: 0.4s;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.menu {
+  height: 35rem;
+  width: 35rem;
+  position: relative;
+  cursor: pointer;
+  // Line elements
+  & > div {
+    height: 2px;
+    background-color: $color-primary; 
+    position: absolute;
+    transition: all 0.3s;
+  }
+  & div:first-child {
+    width: 35rem;
+    top: calc(50% - 5rem);
+    right: 0;
+  }
+  & div:nth-child(2) {
+    width: 18rem;
+    top: calc(50% + 5rem);
+    right: 0;
+  }
+}
+
+.active {
+  & > div {
+    background-color: $color-white;
+  }
+  & div:first-child {
+    width: 30rem;
+    transform: translateY(5rem) rotateZ(-45deg);
+    height: 3px;
+  }
+  & div:nth-child(2) {
+    width: 30rem;
+    transform: translateY(-5rem) rotateZ(45deg);
+    height: 3px;
+  }
+}

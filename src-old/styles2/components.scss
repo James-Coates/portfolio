@@ -1,0 +1,156 @@
+@import './variables.scss';
+
+.btn {
+  margin-top: 50rem;
+  padding: 20rem 50rem;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: inline-block;
+  &:not(:last-of-type) {
+    margin-right: 0rem;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 150%;
+    height: 100%;
+    transform: skewX(-25deg) translateX(100%);
+    transition: 0.5s;
+    z-index: -1;
+  }
+  &:hover {
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-primary-light {
+  border: 2px solid $color-white;
+  background-color: $color-primary;
+  color: $color-white;
+  &::after {
+    background-color: lighten($color-primary, 5%);
+  }
+  &:hover {
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-secondary-light {
+  color: $color-primary;
+  border: 2px solid $color-gray-medium;
+  &::after {
+    background-color: $color-gray-medium;
+  }
+  &:hover {
+    color: $color-primary;
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-primary-dark {
+  border: 2px solid $color-white;
+  color: white;
+  &::after {
+    background-color: white;
+  }
+  &:hover {
+    color: $color-primary;
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+.btn-secondary-dark {
+  border: 2px solid $color-white;
+  color: $color-white;
+  &::after {
+    background-color: $color-white;
+  }
+  &:hover {
+    color: $color-primary;
+    &::after {
+      transform: skewX(-25deg) translateX(0%);
+    }
+  }
+}
+
+form {
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-text {
+  display: block;
+  padding: 34rem 20rem 13rem 20rem;
+  margin-bottom: 20rem;
+  position: relative;
+  top: 0;
+  min-width: 330rem;
+  width: 100%;
+  border: 1px solid $color-gray-medium;
+  &::placeholder {
+    color: $color-gray-medium;
+    transition: 0.3s;
+  }
+}
+
+.message-container {
+  background-color: $color-white;
+  & > textarea {
+    z-index: 3;
+    padding-top: 40rem;
+  }
+}
+
+textarea {
+  height: 200rem;
+  resize: none;
+  background-color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  top: 23rem;
+  left: 22rem;
+  z-index: 2;
+  color: $color-gray-medium;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: 200rem;
+  height: 0;
+  display: block;
+  cursor: text;
+  .input-text:focus + & {
+    top: 11rem;
+    left: 22rem;
+    font-size: 14rem;
+    color: $color-gray-dark;
+  }
+}
+
+.input-filled {
+  top: 11rem;
+  left: 22rem;
+  font-size: 14rem;
+  color: $color-gray-dark;
+}
+
+@media screen and (min-width: $screen-md) {
+  .btn:not(:last-of-type) {
+    margin-right: 50rem;
+  }
+}

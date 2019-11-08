@@ -1,0 +1,63 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  height: 55rem;
+  width: 100%;
+  position: fixed;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba($color-white, 0.9);
+  @media screen and (min-width: $screen-md) {
+    padding: 0 50rem;    
+  }
+}
+
+.logo {
+  color: $color-primary;
+  font-size: 18rem;
+  letter-spacing: 1rem;
+}
+
+.menu {
+  height: 35rem;
+  width: 35rem;
+  position: relative;
+  cursor: pointer;
+  // Line elements
+  & > div {
+    height: 2px;
+    background-color: $color-primary; 
+    position: absolute;
+    transition: all 0.3s;
+  }
+  & div:first-child {
+    width: 35rem;
+    top: calc(50% - 5rem);
+    right: 0;
+  }
+  & div:nth-child(2) {
+    width: 18rem;
+    top: calc(50% + 5rem);
+    right: 0;
+  }
+}
+
+.active {
+  & > div {
+    background-color: $color-white;
+  }
+  & div:first-child {
+    width: 30rem;
+    transform: translateY(5rem) rotateZ(-45deg);
+    height: 3px;
+  }
+  & div:nth-child(2) {
+    width: 30rem;
+    transform: translateY(-5rem) rotateZ(45deg);
+    height: 3px;
+  }
+}

@@ -1,19 +1,22 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'gatsby';
 
 import landingStyles from './landing-styles.module.scss';
+const downArrow = require('../../images/icons/nav/down.svg');
 
 const Landing = () => (
-  <section className={landingStyles.section}>
-    <h2 className={landingStyles.display}>James</h2>
-    <p className={landingStyles.subDisplay}>DEVELOPER & ENGINEER</p>
-    <Link to="#about">
-      <div className={landingStyles.scroll}>
-        <p>Scroll</p>
-        <i className={`icon ion-ios-arrow-round-down ${landingStyles.icon}`}></i>
+  <section className={landingStyles.wrapper}>
+    <div className={landingStyles.container}>
+      <div className={landingStyles.content}>
+        <p className={landingStyles.display}>Hello,</p>
+        <p>My name’s James and I’m a web developer currently based in Nottingham in the UK. </p>
+        <p>With a background in engineering and a passion for code I hope to help shape the web of tomorrow.</p>
       </div>
-    </Link>
+      <Link to="#about" className={landingStyles.down}>
+        <img src={downArrow} alt="View More Button" />
+      </Link>
+    </div>
   </section>
-)
+);
 
-export default Landing
+export default Landing;

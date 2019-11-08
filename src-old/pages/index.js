@@ -1,31 +1,18 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import About from "../components/about"
+import Landing from "../components/landing"
+import FeaturedWork from "../components/featured-work"
 
-import landingStyling from '../components/landing.module.scss';
+import '../styles/main.scss';
 
 const IndexPage = () => {
-  const featuredProjects = allProjectsJson.edges.map((edge) => edge.node);
-  console.log(featuredProjects); 
   return (
     <Layout>
-      <SEO title="Home" />
-      <div className={`${landingStyling.landing} container`}>
-          <div className={landingStyling.container}>
-            <div className={landingStyling.display}>
-              I <span>Build</span> Things
-            </div>
-            <div className={landingStyling.lead}>
-              I’m James, a full stack web developer turning ideas into digital reality.
-            </div>
-            <div className={landingStyling.btn__container}>
-              <Link className="btn" to="/work">Latest Work</Link>
-              <Link className="btn btn__secondary" to="/contact">Lets Chat</Link>
-            </div>
-          </div>
-      </div>
+      <Landing />
+      <About />
+      <FeaturedWork />
     </Layout>
   )
 }

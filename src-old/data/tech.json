@@ -1,0 +1,62 @@
+[
+  {
+    "id": "react",
+    "title": "React",
+    "icon": "./images/tech/react.svg",
+    "color": "#000"
+  },
+  {
+    "id": "reactNative",
+    "title": "React Native",
+    "icon": "./images/tech/react.svg",
+    "color": "#000"
+  },
+  {
+    "id": "angular",
+    "title": "Angular",
+    "icon": "./images/tech/angular.svg",
+    "color": "#000"
+  },
+  {
+    "id": "css",
+    "title": "CSS",
+    "icon": "./images/tech/css3.svg",
+    "color": "#000"
+  },
+  {
+    "id": "html",
+    "title": "HTML",
+    "icon": "./images/tech/html5.svg",
+    "color": "#000"
+  },
+  {
+    "id": "javascript",
+    "title": "Javascript",
+    "icon": "./images/tech/javascript.svg",
+    "color": "#000"
+  },
+  {
+    "id": "vue",
+    "title": "VUE",
+    "icon": "./images/tech/vue-dot-js.svg",
+    "color": "#000"
+  },
+  {
+    "id": "firebase",
+    "title": "Firebase",
+    "icon": "./images/tech/firebase.svg",
+    "color": "#000"
+  },
+  {
+    "id": "aws",
+    "title": "AWS",
+    "icon": "./images/tech/amazonaws.svg",
+    "color": "#000"
+  },
+  {
+    "id": "mongodb",
+    "title": "Mongodb",
+    "icon": "./images/tech/mongodb.svg",
+    "color": "#000"
+  }
+]

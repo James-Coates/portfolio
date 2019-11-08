@@ -2,46 +2,63 @@
 @import '../../styles/variables.scss';
 
 .container {
+  @include container;
+  width: 90%;
   height: 55rem;
-  width: 100%;
   position: fixed;
-  padding: 0 5%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   z-index: 100;
-  background-color: rgba($color-white, 0.9);
-  @media screen and (min-width: $screen-md) {
-    padding: 0 50rem;    
-  }
+  color: $color-white;
 }
 
 .logo {
-  color: $color-primary;
   font-size: 18rem;
-  letter-spacing: 1rem;
+  font-weight: 600;
+}
+
+.nav {
+  justify-content: flex-end;
+  display: none;
+  & a {
+    margin-left: 60rem;
+    transition: 0.4s;
+    &:hover {
+      color: $color-gray-light;
+    }
+  }
 }
 
 .menu {
-  height: 35rem;
+  height: 20rem;
   width: 35rem;
   position: relative;
   cursor: pointer;
+  // background-color: blue;
   // Line elements
   & > div {
+    background-color: $color-white;
     height: 2px;
-    background-color: $color-primary; 
     position: absolute;
     transition: all 0.3s;
+    border-radius: 2rem;
   }
   & div:first-child {
     width: 35rem;
-    top: calc(50% - 5rem);
+    top: calc(50% - 10rem);
     right: 0;
   }
   & div:nth-child(2) {
-    width: 18rem;
-    top: calc(50% + 5rem);
+    width: 35rem;
+    top: calc(50%);
+    right: 0;
+  }
+  & div:nth-child(3) {
+    width: 20rem;
+    top: calc(50% + 10rem);
     right: 0;
   }
 }
@@ -51,13 +68,18 @@
     background-color: $color-white;
   }
   & div:first-child {
-    width: 30rem;
-    transform: translateY(5rem) rotateZ(-45deg);
-    height: 3px;
+    transform: translateX(-2rem) translateY(8rem) rotateZ(-45deg);
   }
   & div:nth-child(2) {
-    width: 30rem;
-    transform: translateY(-5rem) rotateZ(45deg);
-    height: 3px;
+    transform: translateX(-2rem)  translateY(-2rem) rotateZ(45deg);
   }
+  & div:nth-child(3) {
+    width: 35rem;
+    transform: translateX(-2rem) translateY(-12rem) rotateZ(45deg);
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .menu {display: none;}
+  .nav {display: flex};
 }

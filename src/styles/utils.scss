@@ -1,13 +1,3 @@
-.col-sm-100 {
-  flex: 100%;
-}
-
-
-@media screen and (min-width: $screen-lg) {
-  .col-lg-50 {
-    flex: 0 50%;
-  }
-  .col-lg-60 {
-    flex: 0 60%;
-  }
+.icon-filter {
+  filter: invert(53%) sepia(29%) saturate(0%) hue-rotate(199deg) brightness(109%) contrast(87%);
 }
