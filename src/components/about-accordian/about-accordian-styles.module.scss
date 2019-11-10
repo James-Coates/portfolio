@@ -1,0 +1,57 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  background-color: $color-gray-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 100rem 0;
+}
+
+.heading {
+  @include heading;
+}
+
+.slide {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+  padding-top: 20rem;
+}
+
+.flex2 {
+  & >div{
+    flex: 0 50%;
+  }
+}
+
+.flex3 {
+  & >div{
+    flex: 0 50%;
+  }
+}
+
+.label {
+  @include heading3;
+  text-align: center;
+  min-width: 100%;
+  height: 40rem;
+}
+
+@media screen and (min-width: $screen-lg) {
+  .slide {
+    max-width: 500rem;
+  }
+  .flex3 {
+    & >div{
+      flex: 0 33%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  text-align: center;
+}
+
+.icon {
+  height: 60rem;
+  margin: 0 auto;
+  margin-bottom: 20rem;
+}
+
+.heading {
+  @include heading2;
+}

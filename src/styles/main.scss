@@ -2,3 +2,8 @@
 @import './typography.scss';
 @import './utils.scss';
 // @import './components.scss';
+
+// Glide
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import './glide-theme.scss';
+

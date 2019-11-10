@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Web Development",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "icon": "../images/icons/features/webdev.svg"
+  },
+  {
+    "name": "Native iOS & Android",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "icon": "../images/icons/features/webdev.svg"
+  },
+  {
+    "name": "Languages & Toolset",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "icon": "../images/icons/features/webdev.svg"
+  }
+]

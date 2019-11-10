@@ -1,17 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import Landing from "../components/landing"
-import Header from "../components/header"
+import Layout from '../components/layout';
+import Landing from '../components/landing';
+import About from '../components/about';
 
 import '../styles/main.scss';
 
-const IndexPage = () => {
-  return (
-    <div>
-      <Header />
-      <Landing />
-    </div>
-  )
-}
+const IndexPage = () => (
+  <Layout>
+    <Landing />
+    <About />
+  </Layout>
+);
 
-export default IndexPage
+export default IndexPage;

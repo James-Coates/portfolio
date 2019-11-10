@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 50%;
+  height: 140rem;
+  text-align: center;
+}
+
+.icon {
+  height: 40rem;
+  margin-bottom: 10rem;
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "languages": [
+      {
+        "name": "Javascript",
+        "icon": "../images/icons/tech/javascript.svg"
+      },
+      {
+        "name": "Python",
+        "icon": "../images/icons/tech/python.svg"
+      },
+      {
+        "name": "HTML",
+        "icon": "../images/icons/tech/html5.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "../images/icons/tech/css3.svg"
+      }
+    ]
+  },
+  {
+    "frontend": [
+      {
+        "name": "React",
+        "icon": "../images/icons/tech/react.svg"
+      },
+      {
+        "name": "Angular",
+        "icon": "../images/icons/tech/angular.svg"
+      },
+      {
+        "name": "Vue",
+        "icon": "../images/icons/tech/vue-dot-js.svg"
+      },
+      {
+        "name": "SASS",
+        "icon": "../images/icons/tech/sass.svg"
+      }
+    ]
+  },
+  {
+    "backend": [
+      {
+        "name": "Nodejs",
+        "icon": "../images/icons/tech/node-dot-js.svg"
+      },
+      {
+        "name": "MongoDb",
+        "icon": "../images/icons/tech/mongodb.svg"
+      },
+      {
+        "name": "SQL",
+        "icon": "../images/icons/tech/postgresql.svg"
+      }
+    ]
+  },
+  {
+    "other": [
+      {
+        "name": "Git",
+        "icon": "../images/icons/tech/git.svg"
+      },
+      {
+        "name": "Webpack",
+        "icon": "../images/icons/tech/webpack.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "../images/icons/tech/amazonaws.svg"
+      },
+      {
+        "name": "Firebase",
+        "icon": "../images/icons/tech/firebase.svg"
+      },
+      {
+        "name": "Adobe Suite",
+        "icon": "../images/icons/tech/adobe.svg"
+      }
+    ]
+  }
+]

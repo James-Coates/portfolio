@@ -31,18 +31,24 @@
 }
 
 @mixin heading {
-  font-size: 48rem;
+  font-size: 32rem;
   font-weight: $font-weight-bold;
-  line-height: 58rem;
-  text-transform: uppercase;
   position: relative;
-  max-width: 380rem;
   padding-bottom: 30rem;
+  color: $color-white;
 }
 
-@mixin subHeading {
-  font-size: 20rem;
-  padding-bottom: 30rem;
+@mixin heading2 {
+  font-size: 22rem;
+  font-weight: $font-weight-bold;
+  color: $color-white;
+  padding-bottom: 10rem;
+}
+
+@mixin heading3 {
+  font-weight: $font-weight-bold;
+  color: $color-white;
+  padding-bottom: 10rem;
 }
 
 

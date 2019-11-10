@@ -4,3 +4,9 @@ body {
   font-family: $font;
   color: $color-gray-light;
 }
+
+p {
+  padding-bottom: 1em;
+  line-height: 1.5em;
+  // font-size: 18rem;
+}

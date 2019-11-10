@@ -1,0 +1,73 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  min-height: 200vh;
+  background-color: $color-black-light;
+  padding-top: 200rem;
+}
+
+.container {
+  @include container;
+  display: block;
+  min-height: 200rem;
+  // background-color: red;
+  padding-top: 50rem;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  // background-color: blueviolet;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100rem;
+}
+
+.img-frame {
+  flex: 1 100%;
+  background-color: $color-gray-dark;
+  border-radius: 3rem;
+  margin-bottom: 30rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.heading {
+  @include heading;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  & > div {
+    flex: 0 0 100%;
+    padding: 0 20rem;
+    padding-bottom: 50rem;
+  }
+}
+
+
+@media screen and (min-width: $screen-lg) {
+  .img-frame {
+    flex: 0 45%;
+    order: 2;
+    height: 500rem;
+  }
+  .img {
+    width: auto;
+    height: 100%;
+    float: right;
+  }
+  .content {
+    flex: 0 45%;
+    order: 1;
+  }
+  .features {
+    & > div {
+      flex: 1;
+    }
+  }
+}

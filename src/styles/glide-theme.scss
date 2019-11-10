@@ -1,0 +1,26 @@
+.glide__slide {
+  height: 400rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.glide__bullets {
+  text-align: center;
+}
+
+.glide__bullet {
+  height: 3rem;
+  width: 20rem;
+  background-color: rgb(128, 128, 128);
+  &:focus {
+    outline: none;
+  }
+  &--active {
+    background-color: white;
+  }
+  &:not(:last-child) {
+    margin-right: 6rem;
+  }
+}
