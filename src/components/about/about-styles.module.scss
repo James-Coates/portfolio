@@ -2,7 +2,6 @@
 @import '../../styles/variables.scss';
 
 .wrapper {
-  min-height: 200vh;
   background-color: $color-black-light;
   padding-top: 200rem;
 }
@@ -11,7 +10,6 @@
   @include container;
   display: block;
   min-height: 200rem;
-  // background-color: red;
   padding-top: 50rem;
 }
 

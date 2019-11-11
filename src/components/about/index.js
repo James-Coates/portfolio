@@ -68,7 +68,7 @@ const About = () => {
         </div>
         <div className={aboutStyles.features}>
           {features.map((feature) => (
-            <Feature feature={feature} />
+            <Feature feature={feature} key={feature.name}/>
           ))}
         </div>
       </div>
