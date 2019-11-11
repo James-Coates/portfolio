@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SEO from '../seo';
 import Header from '../header';
 // import MenuScreen from '../menu-screen';
-// import Footer from '../footer';
+import Footer from '../footer';
 
 const Layout = ({ children }) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <Header menuActive={menuActive} setMenuActive={setMenuActive} />
       {/* <MenuScreen menuActive={menuActive} setMenuActive={setMenuActive}/> */}
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

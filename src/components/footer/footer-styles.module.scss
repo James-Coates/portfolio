@@ -1,0 +1,103 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  background-color: $color-black;
+  padding: 75rem 0 50rem 0;
+  font-weight: $font-weight-bold;
+}
+
+.container {
+  @include container;
+  text-align: center;
+  display: block;
+  color: $color-gray-medium;
+}
+
+.heading {
+  @include heading;
+  font-size: 44rem;
+  font-style: italic;
+  padding-bottom: 10rem;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 0rem;
+    bottom: 20rem;
+    left: 0;
+    transition: 0.5s;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+      background-color: $color-white;
+    }
+  }
+}
+
+.email {
+  font-style: italic;
+  color: $color-gray-medium;
+  transition: 0.5s;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20rem;
+  padding: 40rem 0 50rem 0;
+  margin: 0 auto;
+  max-width: 450rem;
+  align-items: center;
+  & > a {
+    padding: 15rem;
+    margin: 10rem;
+    transition: 0.5s;
+    width: 130rem;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.social {
+  font-size: 28rem;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 300rem;
+  margin: 0 auto;
+  & .twitter:hover {
+    color: #1DA1F2;
+  }
+  & .github:hover {
+    color: white;
+  }
+  & .medium:hover {
+    color: #03a87c;
+  }
+  & a {
+    transition: 0.5s;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .heading {
+    font-size: 60rem;
+    padding-bottom: 20rem;
+  }
+  .links {
+    flex-direction: row;
+    font-size: 16rem;
+    padding-bottom: 10rem;
+  }
+}

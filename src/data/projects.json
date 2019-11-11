@@ -1,10 +1,10 @@
 [
   {
     "id": "convo",
-    "title": "CONVO",
+    "title": "Convo",
     "slug": "convo",
     "tags": ["Android/iOS", "React Native"],
-    "descShort": "<p>A native mobile chat app running on iOS and Android. Built with React Native the application provides an interface for users to send messages, images and their location.</p>",
+    "desc": "<p>A native mobile chat app running on iOS and Android. Built with React Native the application provides an interface for users to send messages, images and their location.</p>",
     "objective": "<p>CONVO is a cross compatible mobile device chat application that allows users to send and receive messages in real time. In addition to simple text based messages, the app is to provide an interface to share images and current location.</p>",
     "solution": "<p>CONVO is built using the React Native framework leveraging the Expo development platform for cross platform mobile app development. Facilities for permissions, image and location sharing are achieved using the Expo API library.</p><p>Google’s firebase is used for user authentication, storing messages, images and other required data fields.</p><p>That chat application interface is built with the ‘Gifted Chat’ library to provide a complete and familiar feel to the application</p>",
     "image": "./images/projects/convo/main.png",
@@ -15,7 +15,8 @@
     "repo": "https://github.com/James-Coates/convo",
     "colorDark": "#6B26CA",
     "featured": true,
-    "mobileOnly": true
+    "mobileOnly": true,
+    "gridSpan": {"rows": 2, "cols": 2}
   },
   {
     "id": "ello",
@@ -32,11 +33,12 @@
     "link": "https://james-coates.github.io/meetup/",
     "repo": "https://github.com/James-Coates/meetup",
     "colorDark": "#0B132B",
-    "featured": false
+    "featured": false,
+    "gridSpan": {"rows": 1, "cols":2}
   },
   {
     "id": "flix",
-    "title": "FLIX",
+    "title": "Flix",
     "slug": "flix",
     "tags": ["Web App", "React", "API"],
     "image": "./images/projects/flix/main.png",
@@ -49,7 +51,8 @@
     "link": "https://flix-db.herokuapp.com/",
     "repo": "https://github.com/James-Coates/flix",
     "colorDark": "#0A1C43",
-    "featured": true
+    "featured": true,
+    "gridSpan": {"rows": 1, "cols": 1}
   },
   {
     "id": "todo",
@@ -65,7 +68,8 @@
     "desktopScreen": "./images/projects/todo/desktop.jpg",
     "link": "https://to-do-vue.herokuapp.com/",
     "repo": "https://github.com/James-Coates/to-do-vue",
-    "colorDark": "#252525"
+    "colorDark": "#252525",
+    "gridSpan": {"rows": 2, "cols": 2}
   },
   {
     "id": "btcquiz",
@@ -82,7 +86,8 @@
     "link": "https://bitcoin-quiz-app.herokuapp.com/welcome",
     "repo": "https://github.com/James-Coates/bitcoin-quiz-app",
     "colorDark": "#F18F18",
-    "featured": true
+    "featured": true,
+    "gridSpan": {"rows": 2, "cols": 1}
   },
   {
     "id": "pokedex",
@@ -99,6 +104,7 @@
     "link": "https://james-coates.github.io/cf-pokedex/",
     "repo": "https://github.com/James-Coates/cf-pokedex",
     "colorDark": "#161A1E",
-    "featured": true
+    "featured": true,
+    "gridSpan": {"rows": 1, "cols": 1}
   }
 ]
