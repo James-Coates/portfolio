@@ -1,0 +1,51 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.item {
+  background-color: $color-gray-dark;
+  border-radius: 5rem;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  padding: 7rem 15rem;
+  position: relative;
+  overflow: hidden;
+  &:hover .img {
+    filter: grayscale(0%) brightness(90%);
+  }
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(60%) brightness(50%);
+  transition: 0.5s;
+}
+
+.info {
+  // background-color: rgba($color-gray-dark, 0.9);
+  padding: 5rem;
+  z-index: 2;
+  border-radius: 5rem;
+}
+
+.title {
+  @include heading3;
+  padding-bottom: 5rem;
+  text-transform: capitalize;
+}
+
+.tags {
+  margin-left: -5rem;
+ & > p {
+   display: inline-block;
+   padding: 2rem 10rem;
+   background-color: lighten($color-gray-dark, 4%);
+   margin-right: 5rem;
+   border-radius: 10rem;
+   font-size: 13rem;
+   color: $color-gray-medium;
+ }
+}

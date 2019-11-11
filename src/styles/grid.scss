@@ -1,0 +1,17 @@
+@mixin grid-modifier($type: 'column') {
+  @for $i from 1 to 5 {
+    &-#{$type}-span-#{$i} {
+      grid-#{$type}-end: span $i
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .grid {
+    @include grid-modifier($type: 'column')
+  }
+  
+  .grid {
+    @include grid-modifier($type: 'row')
+  }
+}
