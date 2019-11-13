@@ -14,7 +14,7 @@ const PortfolioItem = ({ project }) => {
   const gridClass = `grid-row-span-${rows} grid-column-span-${cols}`;
 
   return (
-    <Link className={`${portfolioItemStyles.item} ${gridClass}`} to={slug}>
+    <Link className={`${portfolioItemStyles.item} ${gridClass}`} to={`/projects/${slug}`}>
       <img src={testImg} className={portfolioItemStyles.img} alt={title} />
       <div className={portfolioItemStyles.info}>
         <h3 className={portfolioItemStyles.title}>{title}</h3>
