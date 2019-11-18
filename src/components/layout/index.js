@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import SEO from '../seo';
 import Header from '../header';
-// import MenuScreen from '../menu-screen';
+import Menu from '../menu';
 import Footer from '../footer';
 
 const Layout = ({ children }) => {
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <main>
       <SEO title="Home" />
       <Header menuActive={menuActive} setMenuActive={setMenuActive} />
-      {/* <MenuScreen menuActive={menuActive} setMenuActive={setMenuActive}/> */}
+      <Menu menuActive={menuActive} setMenuActive={setMenuActive} />
       {children}
       <Footer />
     </main>

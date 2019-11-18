@@ -1,0 +1,35 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  // background-color: $color-gray-dark;
+  padding: 100rem 0;
+}
+
+.container {
+  @include container;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  & > div {
+    width: 45%;
+  }
+}
+
+.text {
+  padding-top: 0;
+  top: 30vh;
+  left: 0;
+  position: sticky;
+  height: 300rem;
+  font-size: 18rem;
+  & h3 {
+    @include heading2;
+  }
+}
+
+.scrollImage {
+  & img {
+    width: 100%;
+  }
+}

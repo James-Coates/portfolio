@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+
+.btn {
+  padding: 12rem 50rem;
+  border-radius: 5rem;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid $color-gray-medium;
+  color: white;
+  transition: 0.3s;
+  font-size: 15rem;
+  &:hover {
+    background-color: $color-gray-dark;
+    border-color: $color-gray-light;
+  }
+}

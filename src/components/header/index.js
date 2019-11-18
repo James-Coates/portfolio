@@ -4,21 +4,19 @@ import { Link } from 'gatsby';
 import headerStyles from './header-styles.module.scss';
 
 const Header = ({ menuActive, setMenuActive }) => {
-  const [ active, setActive ] = useState(false);
-  console.log(menuActive);
   return (
-  <header className={headerStyles.container}>
+  <header className={`${headerStyles.container} ${menuActive ? 'fixed' : null}`}>
     <Link to="/">
       <h1 className={headerStyles.logo}>James Coates</h1>
     </Link>
     <div className={headerStyles.nav}>
-      <Link to="#">About</Link>
-      <Link to="#">Portfolio</Link>
-      <Link to="#">Contact</Link>
+      <Link to="/#about">About</Link>
+      <Link to="/#portfolio">Portfolio</Link>
+      <Link to="/">Contact</Link>
     </div>
     <div 
-      className={`${headerStyles.menu} ${active ? headerStyles.active : null}`} 
-      onClick={() => setActive(!active)}
+      className={`${headerStyles.menu} ${menuActive ? headerStyles.active : null}`} 
+      onClick={() => setMenuActive(!menuActive)}
     >
       <div></div>
       <div></div>

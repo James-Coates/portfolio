@@ -3,7 +3,7 @@
 
 .wrapper {
   background-color: $color-black-light;
-  padding-top: 200rem;
+  padding-top: 150rem;
 }
 
 .container {
@@ -40,6 +40,7 @@
 .features {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 100rem;
   & > div {
     flex: 0 0 100%;
     padding: 0 20rem;

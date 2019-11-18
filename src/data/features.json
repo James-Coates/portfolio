@@ -1,17 +1,17 @@
 [
   {
     "name": "Web Development",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Strong in both back-end and front-end web development capable of developing on most modern javascript frameworks.",
     "icon": "../images/icons/features/webdev.svg"
   },
   {
     "name": "Native iOS & Android",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "icon": "../images/icons/features/webdev.svg"
+    "description": "Experience building cross-platform native applications using Native Javascript platforms.",
+    "icon": "../images/icons/features/native-apps.svg"
   },
   {
     "name": "Languages & Toolset",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "icon": "../images/icons/features/webdev.svg"
+    "icon": "../images/icons/features/modern-frameworks.svg"
   }
 ]

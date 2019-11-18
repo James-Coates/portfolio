@@ -50,25 +50,24 @@ const About = () => {
           </div>
           <div className={aboutStyles.content}>
             <h1 className={`${aboutStyles.heading} reveal1`}>
-              James Coates
+              About James
             </h1>
             <div className="reveal2">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                An engineer turned developer with a with an exceptional can-do
+                attitude and a fervour for efficient code. In the early stages of my career
+                focused on establishing an ambitious career where I can help build efficient
+                systems on the web.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Currently based in Nottingham in the UK, open to new oppotunities across the UK.
               </p>
             </div>
           </div>
         </div>
         <div className={aboutStyles.features}>
           {features.map((feature) => (
-            <Feature feature={feature} key={feature.name}/>
+            <Feature feature={feature} key={feature.name} />
           ))}
         </div>
       </div>

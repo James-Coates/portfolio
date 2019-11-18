@@ -1,0 +1,35 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  padding: 100rem 0;
+  background-color: $color-black-light;
+}
+
+.container {
+  @include container;
+  display: block;
+}
+
+.content {
+  max-width: 800rem;
+  & p {
+    font-size: 18rem;
+  }
+}
+
+.heading {
+  @include heading;
+}
+
+
+
+@media screen and (min-width: $screen-md) {
+  .objective {
+    flex: 1;
+    margin-right: 50rem;
+  }
+  .details {
+    padding-top: 0rem;
+  }
+}

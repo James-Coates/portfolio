@@ -1,0 +1,76 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  background-color: $color-black;
+  padding: 100rem 0;
+}
+
+.container {
+  @include container;
+  display: block;
+  & > p {
+    // text-align: left;
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.objective {
+  flex: 0 100%;
+  max-width: 650rem;
+  font-size: 18rem;
+}
+
+.heading {
+  @include heading;
+}
+
+.details {
+  flex: 0 320rem;
+  padding-top: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15rem;
+  & > div {
+    width: 150rem;
+  }
+  & p {
+    padding: 0;
+    color: white;
+    font-weight: $font-weight-bold;;
+  }
+  & ul {
+    padding-bottom: 20rem;
+    text-transform: capitalize;
+  }
+}
+
+.year {
+  margin-right: 20rem;
+}
+
+.label {
+  margin-right: 10rem;
+}
+
+.detail {
+  color: white;
+  font-weight: 600;
+}
+
+
+
+@media screen and (min-width: $screen-md) {
+  .objective {
+    flex: 1;
+    margin-right: 50rem;
+  }
+  .details {
+    padding-top: 0rem;
+  }
+}

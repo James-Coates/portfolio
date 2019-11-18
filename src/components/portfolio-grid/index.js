@@ -17,6 +17,9 @@ const index = props => {
             slug
             tags
             colorDark
+            gridImage {
+              relativePath
+            }
             gridSpan {
               rows
               cols

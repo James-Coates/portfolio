@@ -1,0 +1,42 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  background-color: $color-gray-dark;
+  padding: 100rem 0;
+}
+
+.container {
+  @include container;
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100rem;
+  flex-wrap: wrap;
+  &:not(:first-child) {
+    padding-top: 100rem;
+  }
+  & > div {
+    flex: 1 100%;
+    &:not(:last-child) {
+      padding-bottom: 100rem;
+    }
+  }
+  & img {
+    max-height: 80vh;
+    margin: 0 auto;
+    box-shadow: 0 0 20rem rgba(black, 0.3);
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .row {
+    & div {
+      flex: 1;
+    }
+  }
+}

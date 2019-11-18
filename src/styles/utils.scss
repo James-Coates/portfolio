@@ -1,3 +1,9 @@
 .icon-filter {
   filter: invert(53%) sepia(29%) saturate(0%) hue-rotate(199deg) brightness(109%) contrast(87%);
 }
+
+@media screen and (min-width: $screen-md) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}

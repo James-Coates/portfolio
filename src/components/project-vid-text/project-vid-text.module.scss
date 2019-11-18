@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  // background-color: $color-gray-dark;
+  padding: 100rem 0;
+}
+
+.container {
+  @include container;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  & > div {
+    width: 45%;
+  }
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.scrollImage {
+  & img {
+    width: 100%;
+  }
+}

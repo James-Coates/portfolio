@@ -7,7 +7,6 @@ export const query = graphql`
     projectsJson(id: {eq: $id}) {
       id
       title
-      descShort
       objective
       solution
       tags

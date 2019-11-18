@@ -7,7 +7,7 @@ import portfolioStyles from './portfolio-styles.module.scss';
 
 const Portfolio = props => {
   return (
-    <section className={portfolioStyles.wrapper}>
+    <section className={portfolioStyles.wrapper} id="portfolio">
       <div className={portfolioStyles.container}>
         <h1 className={portfolioStyles.heading}>Portfolio</h1>
         <PortfolioGrid />
