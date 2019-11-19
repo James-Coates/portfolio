@@ -54,13 +54,12 @@ const About = () => {
             </h1>
             <div className="reveal2">
               <p>
-                An engineer turned developer with a with an exceptional can-do
-                attitude and a fervour for efficient code. In the early stages of my career
-                focused on establishing an ambitious career where I can help build efficient
-                systems on the web.
+                A determined engineer turned developer with a passion for writing efficient code.
+                A quick learner with an intense hunger for knowledge, particularly when it comes
+                to the latest tech and frameworks.
               </p>
               <p>
-                Currently based in Nottingham in the UK, open to new oppotunities across the UK.
+                Currently based in Nottingham, open to new oppotunities in the UK.
               </p>
             </div>
           </div>

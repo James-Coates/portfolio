@@ -23,7 +23,7 @@
 .nav {
   justify-content: flex-end;
   display: none;
-  & a {
+  & a, button {
     margin-left: 60rem;
     transition: 0.4s;
     &:hover {

@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 
 import headerStyles from './header-styles.module.scss';
 
-const Header = ({ menuActive, setMenuActive }) => {
+const Header = ({ menuActive, setMenuActive, contactActive, setContactActive }) => {
+  console.log(contactActive);
   return (
   <header className={`${headerStyles.container} ${menuActive ? 'fixed' : null}`}>
     <Link to="/">
@@ -12,7 +13,7 @@ const Header = ({ menuActive, setMenuActive }) => {
     <div className={headerStyles.nav}>
       <Link to="/#about">About</Link>
       <Link to="/#portfolio">Portfolio</Link>
-      <Link to="/">Contact</Link>
+      <button onClick={() => setContactActive(!contactActive)} type="button">Contact</button>
     </div>
     <div 
       className={`${headerStyles.menu} ${menuActive ? headerStyles.active : null}`} 

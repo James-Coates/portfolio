@@ -7,4 +7,11 @@
 
 .fixed {
   position: fixed;
+  width: 90%;
+}
+
+@media screen and (min-width: $screen-lg) {
+  .fixed {
+    width: 100%;
+  }
 }

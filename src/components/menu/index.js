@@ -6,7 +6,7 @@ import { faTwitter, faGithub, faMediumM } from '@fortawesome/free-brands-svg-ico
 
 import menuStyles from './menu-styles.module.scss';
 
-const index = ({menuActive, setMenuActive}) => {
+const index = ({menuActive, setMenuActive, contactActive, setContactActive}) => {
   return (
     <div className={`${menuActive ? 'show' : ''} ${menuStyles.wrapper}`}>
       <div className={menuStyles.links}>
@@ -27,9 +27,9 @@ const index = ({menuActive, setMenuActive}) => {
             </Link>
           </li>
           <li>
-            <Link to="/#portfolio" onClick={() => setMenuActive(!menuActive)}>
+            <button type="button" onClick={() => setContactActive(!contactActive)}>
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </div>

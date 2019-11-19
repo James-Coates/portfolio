@@ -1,0 +1,49 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.filled {
+  top: 5rem;
+  left: 15rem;
+  font-size: 13rem;
+  .input & {
+    @extend .filled;
+  }
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  padding-bottom: 25rem;
+  & input, textarea {
+    width: 100%;
+    padding: 0rem 15rem;
+    padding-top: 22rem;
+    padding-bottom: 14rem;
+    background-color: transparent;
+    outline: none;
+    border: 2rem solid $color-gray-dark;
+    resize: none;
+    color: $color-white;
+    transition: 0.3s;
+    &:focus + label {
+      @extend .filled;
+    }
+    &:focus-within {
+      border-color: $color-gray-medium;;
+    }
+  }
+  & label {
+    position: absolute;
+    top: 18rem;
+    left: 15rem;
+    transition: 0.3s;
+    color: $color-gray-light;
+  }
+}
+
+textarea {
+  min-height: 200rem;
+}
+
+
+

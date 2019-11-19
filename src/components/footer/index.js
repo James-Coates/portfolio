@@ -6,14 +6,14 @@ import { faTwitter, faGithub, faMediumM } from '@fortawesome/free-brands-svg-ico
 
 import footerStyles from './footer-styles.module.scss';
 
-const Footer = props => {
+const Footer = ({contactActive, setContactActive}) => {
   return (
     <footer className={footerStyles.wrapper}>
       <div className={footerStyles.container}>
         <h4 className={footerStyles.heading}>
-          <Link to="/">
+          <button onClick={() => setContactActive(!contactActive)} type="button">
             Get in Touch
-          </Link>
+          </button>
         </h4>
         <p className={footerStyles.email}>
           <a href="mailto::james.coates@me.com">
@@ -24,10 +24,10 @@ const Footer = props => {
           <Link to="/">
             Home
           </Link>
-          <Link to="/">
+          <Link to="/#about">
             About
           </Link>
-          <Link to="/">
+          <Link to="/#portfolio">
             Portfolio
           </Link>
         </div>
