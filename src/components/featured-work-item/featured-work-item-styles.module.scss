@@ -1,0 +1,48 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  flex: 1;
+  max-width: 1050rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100rem;
+}
+
+.image {
+  flex: 1;
+  min-width: 350rem;
+  overflow: hidden;
+  max-width: 400rem;
+  & img {
+    width: 100%;
+  }
+}
+
+.content {
+  position: relative;
+  flex: 1;
+  min-height: 10rem;
+  min-width: 350rem;
+  padding: 10rem;
+  padding-left: 25rem;
+  padding-right: 100rem;
+}
+
+.tags {
+  & > li {
+    display: inline-block;
+    margin-right: 20rem;
+    color: $color-primary-greyed;
+  }
+}
+
+.links {
+  position: absolute;
+  font-size: 22rem;
+  bottom: 10rem;
+  right: 100rem;
+  & > a {
+    margin-right: 20rem;
+  }
+}

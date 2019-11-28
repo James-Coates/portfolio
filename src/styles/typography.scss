@@ -3,11 +3,64 @@
 body {
   font-family: $font;
   color: $color-gray-light;
-  background-color: $color-black;
+  background-color: $color-primary;
 }
 
 p {
   padding-bottom: 1em;
   line-height: 1.5em;
-  // font-size: 18rem;
+  font-size: 16rem;
 }
+
+.h-sm {
+  font-size: 15rem;
+  font-weight: 700;
+}
+
+.h-md {
+  font-size: 24rem;
+  font-weight: 700;
+  padding-bottom: 10rem;
+}
+
+.p-xl {
+  font-size: 26rem;
+  font-weight: 700;
+  color: $color-primary-greyed;
+  &:last-of-type {
+    margin-bottom: 50rem;
+  }
+}
+
+.heading-xl {
+  font-size: 80rem;
+  font-family: $font-head;
+  color: $color-white;
+  padding-bottom: 10rem;
+}
+.heading-lg {
+  font-size: 48rem;
+  font-family: $font-head;
+  color: $color-white;
+  padding-bottom: 10rem;
+}
+.heading-md {
+  font-size: 34rem;
+  font-family: $font-head;
+}
+.heading-sm {
+  font-size: 20rem;
+  font-family: $font-head;
+}
+
+.paragraph-xl {
+  font-size: 26rem;
+  font-weight: 700;
+  color: $color-gray-light;
+}
+.paragraph-lg {
+  font-size: 20rem;
+  font-weight: 700;
+  color: $color-gray-light;
+}
+

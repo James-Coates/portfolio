@@ -2,51 +2,108 @@
 @import '../../styles/variables.scss';
 
 .item {
-  background-color: $color-gray-dark;
-  border-radius: 5rem;
+  background-color: rgba(white, 0.04);
+  border-radius: 0rem;
   height: 100%;
   text-align: left;
-  display: flex;
-  align-items: flex-end;
-  padding: 7rem 15rem;
   position: relative;
   overflow: hidden;
+  grid-row: span 2;
+  box-shadow: 0 0 14rem rgba(black, 0.45);
+  transition: 0.4s;
   &:hover .img {
     filter: grayscale(0%) brightness(95%);
   }
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30rem rgba(black, 0.25);
+  }
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .img {
+  position: relative;
+  width: 100%;
+  max-height: 350rem;
+  background-color: rgba(white, 0.05);
+  overflow: hidden;
+  & h3 {
+    position: absolute;
+    bottom: 5rem;
+    left: 30rem;
+    color: $color-white;
+  }
+}
+
+.content {
+  padding: 40rem 30rem;
+  padding-bottom: 100rem;
+  & p {
+    color: $color-gray-light;
+  }
+}
+
+.description {
+  flex: 1 100%;
+  & p {
+    max-width: 450rem;
+  }
+}
+
+.rubric {
+  color: $color-gray;
+  font-weight: 700;
+  margin-bottom: 20rem;
+}
+
+// .tags {
+//   margin-left: -5rem;
+//  & > p {
+//    display: inline-block;
+//    padding: 2rem 10rem;
+//    background-color: lighten($color-gray-dark, 4%);
+//    margin-right: 5rem;
+//    border-radius: 10rem;
+//    font-size: 13rem;
+//    color: $color-gray-medium;
+//  }
+// }
+
+.links {
   position: absolute;
-  top: 0;
-  left: 50%;
-  filter: grayscale(90%) brightness(50%);
-  transition: 0.5s;
-  transform: translateX(-50%);
+  bottom: 25rem;
+  left: 30rem;
+  width: calc(100% - 60rem);
+  display: flex;
+  align-items: flex-end;
+  z-index: 3;
 }
 
-.info {
-  // background-color: rgba($color-gray-dark, 0.9);
-  padding: 5rem;
-  z-index: 2;
-  border-radius: 5rem;
+.external {
+  flex: 1;
+  font-size: 24rem;
+  line-height: 1em;
+  color: $color-gray;
+  align-self: flex-end;
+  & > a {
+    margin-right: 25rem;
+    transition: 0.4s;
+    &:hover {
+      color: $color-accent;
+    }
+  }
 }
 
-.title {
-  @include heading3;
-  padding-bottom: 5rem;
-  text-transform: capitalize;
-}
-
-.tags {
-  margin-left: -5rem;
- & > p {
-   display: inline-block;
-   padding: 2rem 10rem;
-   background-color: lighten($color-gray-dark, 4%);
-   margin-right: 5rem;
-   border-radius: 10rem;
-   font-size: 13rem;
-   color: $color-gray-medium;
- }
+@media screen and (min-width: $screen-md) {
+  .item {
+    &:first-of-type {
+      grid-column-start: 2;
+    }
+  }
 }

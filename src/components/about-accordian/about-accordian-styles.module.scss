@@ -2,7 +2,7 @@
 @import '../../styles/variables.scss';
 
 .container {
-  background-color: $color-gray-dark;
+  background-color: rgba(white, 0.02);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .heading {
-  @include heading;
+  color: white;
 }
 
 .slide {
@@ -47,11 +47,16 @@
 
 @media screen and (min-width: $screen-lg) {
   .slide {
-    max-width: 500rem;
+    max-width: 800rem;
+  }
+  .flex2 {
+    & > div {
+      flex: 1
+    }
   }
   .flex3 {
     & >div{
-      flex: 0 33%;
+      flex: 1;
     }
   }
 }

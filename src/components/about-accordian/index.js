@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Glide from '@glidejs/glide';
-import ScrollReveal from 'scrollreveal';
+// import ScrollReveal from 'scrollreveal';
 
 import AboutSliderItem from '../about-slider-item';
 
@@ -11,17 +11,17 @@ import aboutAccordianStyles from './about-accordian-styles.module.scss';
 const AboutAccordian = () => {
   useEffect(() => {
     new Glide('.glide').mount();
-    const config1 = {
-      duration: 2000,
-      distance: '30px',
-    };
-    const config2 = {
-      delay: 500,
-      duration: 2000,
-      distance: '30px',
-    };
-    ScrollReveal().reveal('#skills-head', config1);
-    ScrollReveal().reveal('#skills-body', config2);
+    // const config1 = {
+    //   duration: 2000,
+    //   distance: '30px',
+    // };
+    // const config2 = {
+    //   delay: 500,
+    //   duration: 2000,
+    //   distance: '30px',
+    // };
+    // ScrollReveal().reveal('#skills-head', config1);
+    // ScrollReveal().reveal('#skills-body', config2);
   });
 
   const data = useStaticQuery(graphql`
@@ -65,7 +65,7 @@ const AboutAccordian = () => {
 
   return (
     <div className={aboutAccordianStyles.container}>
-      <h2 className={aboutAccordianStyles.heading} id="skills-head">My Skills & Toolset</h2>
+      <h2 className={`heading-md ${aboutAccordianStyles.heading}`} id="skills-head">My Skills & Toolset</h2>
       <div className="glide" id="skills-body">
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
@@ -86,7 +86,7 @@ const AboutAccordian = () => {
               <div
                 className={`
                   ${aboutAccordianStyles.slide}
-                  ${frontend.length < 4 ? aboutAccordianStyles.flex2 : aboutAccordianStyles.flex3}
+                  ${frontend.length <= 4 ? aboutAccordianStyles.flex2 : aboutAccordianStyles.flex3}
                 `}
               >
                 { frontend.map((item) => (
@@ -99,7 +99,7 @@ const AboutAccordian = () => {
               <div
                 className={`
                   ${aboutAccordianStyles.slide}
-                  ${backend.length < 4 ? aboutAccordianStyles.flex2 : aboutAccordianStyles.flex3}
+                  ${backend.length <= 4 ? aboutAccordianStyles.flex2 : aboutAccordianStyles.flex3}
                 `}
               >
                 { backend.map((item) => (
@@ -112,7 +112,7 @@ const AboutAccordian = () => {
               <div
                 className={`
                   ${aboutAccordianStyles.slide}
-                  ${other.length < 4 ? aboutAccordianStyles.flex2 : aboutAccordianStyles.flex3}
+                  ${other.length <= 4 ? aboutAccordianStyles.flex2 : aboutAccordianStyles.flex3}
                 `}
               >
                 { other.map((item) => (

@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  padding: 300rem 0 200rem;
+}
+
+.container {
+  @include container;
+  display: block;
+}
+
+.content {
+  max-width: 800rem;
+}
+
+.label {
+  font-weight: 700;
+  color: $color-gray;
+  padding-top: 50rem;
+}
+
+.email {
+  transition: 0.4s;
+  &:hover {
+    color: $color-gray;
+  }
+}

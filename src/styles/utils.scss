@@ -7,3 +7,17 @@
     flex-direction: row-reverse;
   }
 }
+
+.color-white {
+  color: white;
+}
+
+.pt-lg {
+  padding-top: 100rem;
+}
+
+@media screen and (min-width: $screen-lg) {
+  .pt-lg {
+    padding-top: 200rem;
+  }
+}

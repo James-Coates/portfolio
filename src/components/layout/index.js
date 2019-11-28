@@ -6,6 +6,8 @@ import Menu from '../menu';
 import Contact from '../contact';
 import Footer from '../footer';
 
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
 const Layout = ({ children }) => {
   const [menuActive, setMenuActive] = useState(false);
   const [contactActive, setContactActive] = useState(false);

@@ -2,17 +2,28 @@
 
 
 .btn {
-  padding: 12rem 50rem;
-  border-radius: 5rem;
+  padding: 10rem 20rem;
+  border-radius: 3rem;
   position: relative;
   overflow: hidden;
   display: inline-block;
-  border: 2px solid $color-gray-medium;
-  color: white;
-  transition: 0.3s;
+  // font-weight: $font-weight-bold;
+  transition: 0.4s;
   font-size: 15rem;
+  // box-shadow: 0 0 14rem rgba(black, 0.45);
+}
+
+.btn-primary {
+  background-color: $color-accent;
+  color: lighten($color-primary, 4%);
   &:hover {
-    background-color: $color-gray-dark;
+    background-color: darken($color-accent, 5%);
     border-color: $color-gray-light;
   }
+}
+
+.btn-secondary {
+  font-weight: 400;
+  border: 1px solid $color-accent;
+  color: $color-accent;
 }

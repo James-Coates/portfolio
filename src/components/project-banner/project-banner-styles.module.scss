@@ -10,7 +10,7 @@
     height: 25%;
     position: absolute;
     top: 0;
-    background-color: $color-black;
+    background-color: $color-primary;
     opacity: 0.4;
     z-index: 1;
   }
@@ -21,7 +21,7 @@
     height: 75%;
     position: absolute;
     bottom: 0;
-    background-color: $color-black-light;
+    background-color: rgba(white, 0.01);
     z-index: 1;
   }
 }

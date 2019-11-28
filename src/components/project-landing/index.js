@@ -9,7 +9,7 @@ const ProjectLanding = ({ project }) => {
     <div className={projectLandingStyles.wrapper}>
       <div className={projectLandingStyles.container}>
         <div className={projectLandingStyles.content}>
-          <h1 className={projectLandingStyles.heading}>
+          <h1 className={`heading-xl ${projectLandingStyles.heading}`}>
             {title}
           </h1>
           <h2 className={projectLandingStyles.rubric}>
@@ -38,9 +38,9 @@ const ProjectLanding = ({ project }) => {
           </div>
           <div className={projectLandingStyles.buttonContainer}>
             { link ? (
-              <a href={link} className="btn" target="blank">View Site</a>
+              <a href={link} className="btn btn-secondary" target="blank">View Site</a>
             ) : null }
-            <a href={repo} className="btn" target="blank">View Repo</a>
+            <a href={repo} className="btn btn-secondary" target="blank">View Repo</a>
           </div>
         </div>
       </div>

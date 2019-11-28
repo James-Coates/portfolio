@@ -16,9 +16,18 @@ const index = props => {
             title
             slug
             tags
+            rubric
+            overview
             colorDark
+            link
+            repo
             gridImage {
               relativePath
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             gridSpan {
               rows
@@ -33,7 +42,7 @@ const index = props => {
   return (
     <div className={portfolioGridStyles.grid}>
       {projects.map((project) => (
-        <PortfolioItem project={project} key={project.title}/>
+        <PortfolioItem project={project} key={project.title} />
       ))}
     </div>
   );

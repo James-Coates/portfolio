@@ -36,17 +36,17 @@ const index = ({menuActive, setMenuActive, contactActive, setContactActive}) => 
       <div className={menuStyles.social}>
         <ul>
           <li>
-            <a href="">
+            <a href="" target="blank">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" target="blank">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" target="blank">
               <FontAwesomeIcon icon={faMediumM} />
             </a>
           </li>

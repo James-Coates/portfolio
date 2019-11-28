@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
+// import ScrollReveal from 'scrollreveal';
 
 import featureStyles from './feature-styles.module.scss';
 
 const Feature = ({feature}) => {
-  useEffect(() => {
-    const config1 = {
-      duration: 2000,
-      distance: '30px',
-    };
-    ScrollReveal().reveal('#feature', config1);
-  });
+  // useEffect(() => {
+  //   const config1 = {
+  //     duration: 2000,
+  //     distance: '30px',
+  //   };
+  //   ScrollReveal().reveal('#feature', config1);
+  // });
 
   return (
     <div className={featureStyles.container} id="feature">

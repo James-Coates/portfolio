@@ -3,8 +3,7 @@
 
 .container {
   @include container;
-  width: 90%;
-  height: 55rem;
+  height: 70rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -18,16 +17,38 @@
 .logo {
   font-size: 18rem;
   font-weight: 600;
+  margin-right: 30rem;
 }
 
 .nav {
   justify-content: flex-end;
   display: none;
-  & a, button {
-    margin-left: 60rem;
+  flex: 1;
+  align-items: flex-end;
+  & .links > a, .links > button {
+    font-weight: 700;
+    margin-left: 30rem;
+    transition: 0.4s;
+    color: $color-gray;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.social {
+  min-width: 100rem;
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
+  color: $color-gray;
+  & > a:not(:last-of-type) {
+    margin-right: 30rem;
+    font-size: 20rem;
     transition: 0.4s;
     &:hover {
-      color: $color-gray-light;
+      color: $color-white;
     }
   }
 }

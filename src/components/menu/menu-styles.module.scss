@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: $color-black;
+  background: $color-primary;
   width: 100vw;
   height: 100vh;
   z-index: 100;
@@ -30,15 +30,18 @@
     padding-top: 100rem;
   }
   & li {
-    font-size: 38rem;
+    font-size: 32rem;
     &:not(:last-child) {
       margin-bottom: 25rem;
+    }
+    & button {
+      font-weight: $font-weight-bold;
     }
   }
 }
 
 .social {
-  height: 80rem;
+  height: 120rem;
   width: 200rem;
   margin: 0 auto;
   & ul {

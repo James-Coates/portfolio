@@ -2,16 +2,16 @@
 @import '../../styles/variables.scss';
 
 .wrapper {
-  background-color: $color-black;
-  padding: 100rem 0 100rem 0;
-  font-weight: $font-weight-bold;
+  padding: 50rem 0 40rem 0;
+  color: $color-gray;
 }
 
 .container {
   @include container;
   text-align: center;
-  display: block;
-  color: $color-gray-medium;
+  align-items: center;
+  font-weight: 700;
+  flex-direction: column;
 }
 
 .heading {
@@ -41,12 +41,19 @@
   }
 }
 
+.tm {
+  width: 260rem;
+  order: 2;
+}
+
 .email {
-  font-style: italic;
-  color: $color-gray-medium;
-  transition: 0.5s;
-  &:hover {
-    color: $color-white;
+  width: 260rem;
+  text-align: right;
+  display: none;
+  p {
+    padding: 0;
+    font-size: 18rem;
+    font-weight: 700;
   }
 }
 
@@ -88,16 +95,19 @@
   & a {
     transition: 0.5s;
   }
+  & > a:not(:last-of-type) {
+    margin-right: 20rem;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
-  .heading {
-    font-size: 60rem;
-    padding-bottom: 20rem;
+  .tm {
+    order: 0;
   }
-  .links {
+  .container {
     flex-direction: row;
-    font-size: 16rem;
-    padding-bottom: 10rem;
+  }
+  .email {
+    display: block;
   }
 }

@@ -11,6 +11,16 @@
   @include dash;
 }
 
+@mixin displayText {
+  font-weight: $font-weight-bold;
+  font-size: 18rem;
+  color: $color-gray-light;
+  position: relative;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 20rem;
+  }
+}
+
 @mixin subDisplay {
   font-size: 18rem;
   text-transform: uppercase;
@@ -34,7 +44,6 @@
   font-size: 32rem;
   font-weight: $font-weight-bold;
   position: relative;
-  padding-bottom: 20rem;
   color: $color-white;
 }
 

@@ -1,14 +1,25 @@
 // Colors
 $color-black: #000;
-$color-black-light: #0A0A0A;
-$color-gray-dark: #101010;
-$color-gray-medium: #555555;
-$color-gray-light: #999999;
-$color-white: #FFF;
+$color-black-light: hsl(0, 0%, 4%);
+$color-gray-dark: #00010F;
+$color-gray-medium: rgb(85, 85, 85);
+
+$color-accent: #CE0057;
+
+$color-primary-dark: #0A0D14;
+$color-primary: #0A0D14;
+$color-primary-greyed: #3D4048;
+$color-gray: #3D4048;
+$color-gray-light: #818893;
+$color-white: #DBDEE6;
+
 
 // Fonts
 $font: 'Open Sans';
-$font-weight-bold: 600;
+$font-main: 'Open Sans';
+$font-head: 'Bebas Neue';
+$font-weight-black: 800;
+$font-weight-bold: 700;
 $font-weight-reg: 400;
 
 // Breakpoints
